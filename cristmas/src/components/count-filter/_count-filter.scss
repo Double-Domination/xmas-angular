@@ -1,0 +1,51 @@
+// @import '../../assets/scss/shared';
+
+.count-filter {
+  @extend .border;
+  @extend .border-3;
+  @extend .border-warning;
+  @extend .rounded-3;
+  @extend .p-2;
+  @extend .m-2;
+  background-color: rgba($purple-500, 0.5);
+  // max-width: 25rem;
+}
+
+.count-filter__heading {
+  font-weight: bold;
+  text-align: left;
+  color: $white;
+}
+
+.count-filter__container {
+  // @extend .border;
+  // @extend .border-3;
+  // @extend .border-warning;
+  @extend .d-flex;
+  @extend .flex-row;
+
+  color: $white;
+}
+
+.count-filter__count-min-value {
+  @extend .border;
+  @extend .border-3;
+  @extend .border-primary;
+  @extend .rounded-pill;
+  width: 3rem;
+  text-align: center;
+}
+
+.count-filter__slider-body {
+  flex-grow: 2;
+  align-self: center;
+}
+
+.count-filter__count-max-value {
+  @extend .border;
+  @extend .border-3;
+  @extend .border-primary;
+  @extend .rounded-pill;
+  width: 3rem;
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+// @import '../../assets/scss/shared';
+
+.range-filter {
+  @extend .border;
+  @extend .border-2;
+  @extend .border-primary;
+  @extend .rounded-3;
+  @extend .p-2;
+  @extend .m-2;
+  @include make-col-ready();
+  @include make-col();
+  background-color: rgba($blue, 0.5);
+}
+
+.range-filter__heading {
+  text-transform: uppercase;
+  color: $white;
+}

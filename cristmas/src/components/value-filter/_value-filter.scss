@@ -1,0 +1,203 @@
+// @import '../../assets/scss/shared';
+
+.active {
+  background-color: transparent;
+  border-color: greenyellow;
+}
+
+.value-filter {
+  @extend .border;
+  @extend .border-3;
+  @extend .border-primary;
+  @extend .rounded-3;
+  @extend .p-2;
+  @extend .m-2;
+  @include make-row();
+  background-color: rgba($purple-500, 0.5);
+  // max-width: 25rem;
+}
+.value-filter__descriptor {
+  @include make-col-ready();
+  @include make-col(3);
+
+  @include media-breakpoint-down(xl) {
+    @include make-col();
+    // border: 3px solid red;
+  }
+}
+
+.value-filter__caption {
+  font-weight: bold;
+  text-align: left;
+  color: $white;
+}
+
+.value-filter__controls {
+  @include make-col-ready();
+  @include make-col(9);
+
+  @include media-breakpoint-down(xl) {
+    @include make-col();
+    // border: 3px solid red;
+  }
+}
+
+[data-filter='шар'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-3;
+  background-color: transparent;
+  background-image: url(../../assets/svg/ball.svg);
+  background-origin: border-box;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+
+[data-filter='колокольчик'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-3;
+  background-color: transparent;
+  background-image: url(../../assets/svg/bell.svg);
+  background-origin: border-box;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+[data-filter='шишка'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-3;
+  background-color: transparent;
+  background-image: url(../../assets/svg/cone.svg);
+  background-origin: border-box;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+[data-filter='снежинка'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-3;
+  background-color: transparent;
+  background-image: url(../../assets/svg/snowflake.svg);
+  background-origin: border-box;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+
+[data-filter='фигурка'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-3;
+  background-color: transparent;
+  background-image: url(../../assets/svg/toy.svg);
+  background-origin: border-box;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+
+[data-filter='белый'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-2;
+  background-color: $white;
+  width: 2rem;
+  height: 2rem;
+}
+
+[data-filter='желтый'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-2;
+  background-color: $yellow;
+  width: 2rem;
+  height: 2rem;
+}
+[data-filter='красный'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-2;
+  background-color: $red;
+  width: 2rem;
+  height: 2rem;
+}
+[data-filter='синий'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-2;
+  background-color: $blue;
+  width: 2rem;
+  height: 2rem;
+}
+[data-filter='зелёный'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-2;
+  background-color: $green;
+  width: 2rem;
+  height: 2rem;
+}
+
+[data-filter='большой'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-3;
+  background-color: transparent;
+  background-image: url(../../assets/svg/ball.svg);
+  background-origin: border-box;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+}
+[data-filter='средний'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-3;
+  background-color: transparent;
+  background-image: url(../../assets/svg/ball.svg);
+  background-origin: border-box;
+  background-position: center center;
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+}
+
+[data-filter='малый'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-3;
+  background-color: transparent;
+  background-image: url(../../assets/svg/ball.svg);
+  background-origin: border-box;
+  background-position: center center;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+}
+
+[data-filter='избранные'] {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .border-2;
+  background-color: $gray-600;
+  width: 2rem;
+  height: 2rem;
+}

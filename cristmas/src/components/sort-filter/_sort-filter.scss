@@ -1,0 +1,15 @@
+.sort-filter-selector {
+  @extend .btn;
+  @extend .btn-primary;
+  min-width: 100%;
+}
+
+.sort-filter-caption {
+  color: $white;
+}
+
+
+
+.sort-selector__value {
+  // color: greenyellow;
+}

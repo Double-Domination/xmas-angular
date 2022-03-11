@@ -1,0 +1,27 @@
+.header-block {
+  @extend .border;
+  @extend .border-2;
+  display: flex;
+  background-color: $gray-900;
+  color: $white;
+}
+
+.header-block__navigation-list {
+  @extend .nav;
+}
+
+.header-block__nav-item {
+  @extend .nav-item;
+}
+
+.header-block__nav-link {
+  @extend .nav-link;
+}
+
+.main-page-wrapper {
+  background-color: $green;
+}
+
+.u-red {
+  background-color: $red;
+}

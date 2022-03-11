@@ -1,0 +1,104 @@
+// @import '../../assets/scss/shared';
+
+.chosen {
+  .ribbon {
+    background: $orange;
+    &::after {
+      border-left-color: $orange;
+    }
+  }
+}
+
+.unit-card {
+  @extend .border;
+  @extend .border-3;
+  @extend .border-primary;
+  @extend .rounded-3;
+  @extend .p-2;
+  @extend .m-2;
+  @extend .flex-grow-1;
+  @extend .flex-shrink-1;
+  background-color: rgba($purple, 0.5);
+  // max-width: 30rem;
+  // min-width: 10rem;
+}
+
+.unit-card__heading {
+  font-weight: bold;
+  text-align: left;
+  color: $white;
+}
+
+.unit-card__descriptor {
+  @include make-row();
+}
+
+.unit-card__leftpan {
+  @include make-col-ready();
+  @include make-col(4);
+  // border: 4px solid $green;
+  // align-items: center;
+}
+
+.unit-card__rigtpan {
+  @include make-col-ready();
+  @include make-col(8);
+  // border: 3px solid $pink;
+  // align-items: center;
+}
+
+.unit-card__toy-image {
+  @extend .d-flex;
+  @include img-fluid();
+  max-width: 90px;
+}
+
+.unit-card__is-favorite {
+  vertical-align: middle;
+  position: relative;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  left: -1rem;
+  width: 5rem;
+  height: 40px;
+  background: #24c5db;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid #24c5db;
+    right: -15px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 8px solid #14455b;
+    border-left: 8px solid transparent;
+    top: -8px;
+  }
+}
+
+.unit-card__properties {
+  // @extend .border;
+  // @extend .border-3;
+  // @extend .border-dark;
+  @extend .d-flex;
+  @extend .flex-column;
+  align-items: flex-start;
+}
+
+.unit-card__prop-item {
+  // @extend .border;
+  // @extend .border-3;
+  color: $white;
+  list-style: none;
+}
